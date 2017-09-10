@@ -1,0 +1,255 @@
+body {
+      background-color: #000000;
+}
+
+.navbar {
+   
+    margin-bottom: 0;
+    background-color: #FAFAFA;
+    border: 0;
+    font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+    font-size: 15px !important;
+    letter-spacing: 4px;
+    animation-delay: 1s;
+    /*opacity:0.2;*/
+
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand { 
+    color: #29292c !important;
+}
+
+/* On hover, the links will turn white */
+.nav-pills li a:hover {
+    color: #FF7F50 !important;
+    background-color:#000000 !important;
+}
+
+/* The active link */
+.nav-pills li.active a {
+    color: #fff !important;
+    background-color:#000000 !important;
+}
+
+ /*Remove border color from the collapsible button*/ 
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.container-fluid{
+    height: 65px;
+    width: 100%;
+    
+}
+
+.navbar-header{
+    height: 100px;
+} 
+
+.a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar-header .navbar-brand{
+    position: absolute; 
+    bottom: 0; 
+    margin-bottom: 8px;
+}
+
+#myNavbar {
+    position: relative;
+    
+}
+
+#myNavbar .nav {
+    position: absolute; 
+    bottom: 0; 
+    right: 0;
+    margin-bottom: 8px;
+    
+}
+
+#slogan{
+    animation-delay: 2s;
+    pointer-events: none;
+    opacity: 1;
+}
+
+p{
+    color: #FFFFFF !important;
+    font-family: 'Fontin-Sans', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+    font-size: 80px !important;
+    text-align: center;
+    padding-top: 180px;
+    padding-bottom: 65px;
+
+}
+
+#modal{
+
+    width:200px;  
+    background-color:white;
+    position:absolute;
+    top: 30%;
+    font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+    font-size: 15px !important;
+    text-align: center;
+
+
+}
+
+.list-group a:hover {
+    color: #FF7F50 !important;
+    background-color:#000000 !important;
+    
+    
+}
+
+span.glyphicon-align-justify{
+    font-size: 1.5em;
+
+}
+
+span.glyphicon-remove{
+   font-size: 1.5em;
+
+}
+
+.overlay{
+   pointer-events: none;
+   opacity: 0.2;
+   z-index:5;
+}
+
+.table table-condensed{
+    border: 3px white;
+}
+
+@media (min-width: 768px) {
+    #modal{
+        opacity: 0;
+    }
+
+    .post{
+        opacity: 1;
+    } 
+    
+    #showcases{
+    
+        animation-delay: 2s;
+        padding-top:100px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: auto;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    
+    body{
+/*        //background-image: url("img/bg.jpg");
+        //background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;*/
+    }
+    #showcases{
+        animation-delay: 2s;
+        padding-top:65px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: auto;
+    }
+    
+    .navbar {
+        /*navbar in ipad*/
+        letter-spacing: 0px; 
+
+    }
+    #modal{
+
+        z-index:2;
+    }
+}
+
+
+
+/*------------ Gallery ----------*/
+.container.gallery-container {
+    background-color: #fff;
+    color: #000000;
+    min-height: 100vh;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    margin-top: 10%;
+    
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 10px;
+        margin-top: 10%;
+    }
+
+    .container.gallery-container {
+        border-radius: 10px;
+        
+    }
+}
+
+

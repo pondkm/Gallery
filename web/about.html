@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gallery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        
+        <!-- jQuery library -->
+        <script src="bootstrap/js/jquery-3.1.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/animate.css">
+        
+
+        <script>
+            $(document).ready(function(){
+                $('#modal').hide();
+                $('#myModal').click(function(){
+                    $('#modal').toggle( "explode" , {}, 1000);
+                    $('.post').toggleClass("overlay");
+                    $('#span').toggleClass('glyphicon-align-justify').toggleClass('glyphicon-remove');
+                });
+ 
+            
+            });
+        </script>
+       
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-default navbar-fixed-top animated fadeIn">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle " data-target="#myNavbar" id="myModal">
+                        <span class="glyphicon glyphicon-align-justify" id="span"></span>
+                    </button>
+                       
+                    <a class="navbar-brand" href="index.html">Logo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav nav-pills">
+                        <li><a href="index.html" >HOME</a></li>
+                        <li><a href="about.html">ABOUT NEEDO</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="showcases.html" onclick="return ajudaUpload()">SHOWCASES</a></li>
+                        <li><a href="#contact">TEAMS</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+   
+    <!--Modal-->
+    
+        <div class="list-group" id="modal">
+          
+            <a href="#" class="list-group-item">HOME</a>
+            <a href="#" class="list-group-item">ABOUT NEEDO</a>
+            <a href="#" class="list-group-item">SERVICES</a>
+            <a href="showcases.html" class="list-group-item">SHOWCASES</a>
+            <a href="#" class="list-group-item">TEAMS</a>
+            <a href="#" class="list-group-item">CONTACT US</a>
+
+        </div > 
+        
+       
+        <div class="post">
+            
+        </div>
+
+       
+        
+    </body>
+</html>
